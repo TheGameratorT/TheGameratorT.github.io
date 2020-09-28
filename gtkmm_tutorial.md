@@ -1,6 +1,6 @@
 # How to install GTK+3 and GTKMM on Windows with CMake
 
-Follow the steps in https://www.msys2.org/ to install MSYS2.
+Follow the steps in [https://www.msys2.org/](https://www.msys2.org/) to install MSYS2.
 
 After MSYS2 is installed add the following to PATH as the first entry:
 `<path to msys64>\mingw64\bin`
