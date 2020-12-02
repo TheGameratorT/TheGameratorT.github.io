@@ -1,8 +1,11 @@
+
 # How to build Static Qt on Windows
 
 **Note**: I am going to build the 32 bits version of MinGW so that the final program will work on both 32 bit and 64 bit machines, you can use the 64 bits version if you only need your final program to work on 64 bit machines.
-_Everywhere you see the word `32-bit` replace it with `64-bit` for the 64 bit version of Static Qt._
+*Everywhere you see the word `32-bit` replace it with `64-bit` for the 64 bit version of Static Qt.*
+
 ---
+
 # Downloading
 Download the [Open Source Qt Online Installer](https://www.qt.io/download).
 
@@ -21,6 +24,7 @@ configure.bat -prefix "<qt_path>\Static\<qt_version>\<env_name>" -release -opens
 mingw32-make -j<thread_count>
 mingw32-make -j<thread_count> install
 ```
+
 | Template         | Description                           | Example                      |
 |------------------|---------------------------------------|------------------------------|
 | `<qt_path>`      | The path to Qt                        | `C:\Qt`                      |
@@ -31,6 +35,7 @@ mingw32-make -j<thread_count> install
 **Note**: If you need to use the Qt WebEngine module remove `-skip qtwebengine` from the template, I skip it by default because it is huge and not used in most of the cases.
 
 ---
+
 Example:
 ```cmd
 cd C:\Qt\5.15.2\Src
