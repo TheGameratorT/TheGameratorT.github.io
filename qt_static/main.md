@@ -25,6 +25,8 @@ mingw32-make -j<thread_count>
 mingw32-make -j<thread_count> install
 ```
 
+<br/>
+
 | Template         | Description                           | Example                      |
 |------------------|---------------------------------------|------------------------------|
 | `<qt_path>`      | The path to Qt                        | `C:\Qt`                      |
